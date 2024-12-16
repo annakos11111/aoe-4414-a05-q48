@@ -53,8 +53,8 @@ else:
 
 # script below
 c_out = c_in
-h_out = (h_in + 2*p - h_pool)/s + 1
-w_out = (w_in + 2*p - w_pool)/s + 1
+h_out = int((h_in + 2*p - h_pool)/s + 1)
+w_out = int((w_in + 2*p - w_pool)/s + 1)
 adds  = c_in*h_out*w_out*(h_pool*w_pool - 1)
 muls  = 0
 divs  = c_in*h_out*w_out
